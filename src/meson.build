@@ -1,8 +1,8 @@
 core_sources = ['chk/core/format.c', 'chk/core/logging.c']
 
-cwalk_dep = dependency('cwalk', static: true, fallback: ['cwalk', 'cwalk_dep'])
+cwalk_dep = dependency('cwalk', fallback: ['cwalk', 'cwalk_dep'], static: true)
 
-library(
+chk_code_lib = library(
   'chk-core',
   core_sources,
   include_directories: core_inc,

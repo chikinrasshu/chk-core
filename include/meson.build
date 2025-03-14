@@ -1,5 +1,6 @@
 install_headers(
   [
+    'chk/core/callback.h',
     'chk/core/core.h',
     'chk/core/format.h',
     'chk/core/logging.h',
