@@ -7,7 +7,7 @@ subdir('src')
 
 pkg_mod = import('pkgconfig')
 pkg_mod.generate(
-  libraries: chk_code_lib,
+  libraries: chk_core_lib,
   name: 'chk-core',
   filebase: 'chk-core',
   description: 'Core libraries for chk projects.',
